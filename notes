@@ -1,0 +1,14 @@
+1. sudo apt-get install npm
+2. sudo npm install -g express
+3. sudo npm install -g express-generator
+4. express nodetest1 - start a new project (express does the scaffolding)
+5. package.json - add mongodb and monk "*" - latest version
+6. sudo npm install - for installing dependencies (express, mongodb, monk - creates routes / views folders etc.)
+7. mkdir data - for mongodb
+8. npm start
+9. localhost:3000 you will see the page
+10. mongod and mongo setup
+   mongod --dbpath nodetest1/data --port 9160
+   mongo --port 9160
+   use nodetest1
+   
