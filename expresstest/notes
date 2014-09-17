@@ -1,0 +1,29 @@
+Learning stuff from 
+http://expressjs.com/4x/api.html
+
+Aim is to build a standalone web app
+No mongodb / mongoose dependency
+No Jade templating
+
+Mount a few middlewares to the request
+Use routes to render static webpages
+
+README
+----------------------------------------------------------------------
+
+STEP 1 :
+Bring up a web server using express
+    a. npm install express
+    b. script bin/www -> require('express'), app = express(), app.listen('8088')
+    c. node bin/www
+
+STEP 2 :
+Render "Hello world" for any request
+    a. defined app.get('*', function(req, res){}) to handle any request
+    b. request.write is like a buffer
+    c. you need to end it with request.end method.
+
+STEP 3 :
+Explore Request API. 
+get user params (comeon) and query (user)
+say "Hello World ${user} from ${param[0]}"
