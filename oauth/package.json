@@ -1,0 +1,16 @@
+{
+  "name": "oauth",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "*",
+    "cookie-parser": "*",
+    "passport" : "*",
+    "passport-twitter" : "*",
+    "connect-ensure-login" : "*",
+    "express-session" : "*"
+  }
+}
