@@ -1,0 +1,17 @@
+<% var columns = [["First Name", "firstName"], ["Last Name", "lastName"], ["Age", "age"], ["Email", "email"]];%>
+
+<table class="table table-bordered table-striped table-hover table-condensed">
+
+<%# Generate Table Headers %>
+<% columns.forEach(function(column) { %>
+    <th><%= column[0] %></th>
+<% }) %>
+
+<% for(var i = 0; i < userList.length; i++) { %>
+    <tr>
+    <% for (var j = 0; j < columns.length; j++) { %>
+        <td><%= userList[i][columns[j][1]] %></td>
+    <% } %>
+    </tr>
+<% } %>
+</table>
